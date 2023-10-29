@@ -67,13 +67,53 @@ input, select, textarea {
 
 /* Basic */
 
+@-ms-viewport {
+	width: device-width;
+}
 
+body {
+	-ms-overflow-style: scrollbar;
+}
+
+@media screen and (max-width: 480px) {
+
+	html, body {
+		min-width: 320px;
+	}
+
+}
+
+html {
+	box-sizing: border-box;
+}
+
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+body {
+	background-image: url('https://substackcdn.com/image/fetch/w_1456,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F92ecaeae-de66-460c-8d2e-ccea0afb6033_500x281.gif');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+  }
+
+	body.is-preload *, body.is-preload *:before, body.is-preload *:after {
+		-moz-animation: none !important;
+		-webkit-animation: none !important;
+		-ms-animation: none !important;
+		animation: none !important;
+		-moz-transition: none !important;
+		-webkit-transition: none !important;
+		-ms-transition: none !important;
+		transition: none !important;
+	}
 		
 
 /* Type */
 
 	body, input, select, textarea {
-		color: #01d2f7;
+		color: #08f7ff;
 		font-family: "Source Sans Pro", Helvetica, sans-serif;
 		font-size: 16pt;
 		font-weight: 300;
@@ -2009,54 +2049,6 @@ input, select, textarea {
 			padding: 1em 0 0 1em;
 		}
 
-/* Form */
-
-	form {
-		margin: 0 0 2em 0;
-		overflow-x: hidden;
-	}
-
-		form > :last-child {
-			margin-bottom: 0;
-		}
-
-		form > .fields {
-			display: -moz-flex;
-			display: -webkit-flex;
-			display: -ms-flex;
-			display: flex;
-			-moz-flex-wrap: wrap;
-			-webkit-flex-wrap: wrap;
-			-ms-flex-wrap: wrap;
-			flex-wrap: wrap;
-			width: calc(100% + 3em);
-			margin: -1.5em 0 2em -1.5em;
-		}
-
-			form > .fields > .field {
-				-moz-flex-grow: 0;
-				-webkit-flex-grow: 0;
-				-ms-flex-grow: 0;
-				flex-grow: 0;
-				-moz-flex-shrink: 0;
-				-webkit-flex-shrink: 0;
-				-ms-flex-shrink: 0;
-				flex-shrink: 0;
-				padding: 1.5em 0 0 1.5em;
-				width: calc(100% - 1.5em);
-			}
-
-				form > .fields > .field.half {
-					width: calc(50% - 0.75em);
-				}
-
-				form > .fields > .field.third {
-					width: calc(100%/3 - 0.5em);
-				}
-
-				form > .fields > .field.quarter {
-					width: calc(25% - 0.375em);
-				}
 
 		@media screen and (max-width: 480px) {
 
@@ -2813,8 +2805,8 @@ input, select, textarea {
 
 				#header .logo .symbol img {
 					display: block;
-					width: 2em;
-					height: 2em;
+					width: 4em;
+					height: 4em;
 				}
 
 		#header nav {
@@ -2947,7 +2939,7 @@ input, select, textarea {
 		height: 100%;
 		-webkit-overflow-scrolling: touch;
 		background: #0a0a0a;
-		color: #04f7e3;
+		color: #00f7cd;
 		cursor: default;
 		visibility: hidden;
 		z-index: 10002;
@@ -3241,11 +3233,50 @@ input, select, textarea {
 			}
 
 		}
-		.iner3{
-			margin: auto;
+
+
+
+		.contenedor {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+		.contenedor{
+			color: hsl(76, 100%, 51%);
 		}
 
-		.Descargar{
-			color: #ff0000;
+        .imagen {
+            width: 300px;
+            height: auto;
+            margin-bottom: 20px;
+        }
+
+        .imagen-container {
+            text-align: center;
+        }
+		
+		.materiales{
+			text-align: center;
 		}
+		 .logo{
+		font-size: xx-large;	
+		font-size: 150%;
+		}
+		.iner2 {
+			margin: 100px;
+				text-align: center; /* Centra horizontalmente */
+				height: 160px; /* Ajusta la altura según tus necesidades */
+				line-height: 50px; /* Centra verticalmente (igual a la altura) */
+				border: 0px solid #ccc; /* Puedes agregar un borde para visualización */
+			}
+			  
+			  
+		
+		.iner2 {
+		color: floralwhite;
+		}
+		
+		  
+		  
+		
 		
